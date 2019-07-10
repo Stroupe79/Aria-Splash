@@ -21,4 +21,4 @@
 
 ## Database Diagram
 
-![DB Diagram](../../dbdia/dbdesign.JPG "Aria Splash DB")
+![DB Diagram](https://github.com/Stroupe79/Aria-Splash/issues/1#issue-466340938 "Aria Splash DB")

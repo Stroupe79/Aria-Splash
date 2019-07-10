@@ -21,6 +21,4 @@
 
 ## Database Diagram
 
-- Link to your database diagram (Check out this tool https://dbdiagram.io/d)
-  - Its ok to screenshot it or share a link from a tool like above
-  - THE POINT OF THIS IS TO PLAN YOUR DATABASE
+![DB Diagram](./dbdia/dbdesign.jpg)

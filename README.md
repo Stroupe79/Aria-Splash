@@ -21,4 +21,4 @@
 
 ## Database Diagram
 
-![DB Diagram](../../dbdia/dbdesign.jpg "Aria Splash DB")
+![DB Diagram](../../dbdia/dbdesign.JPG "Aria Splash DB")

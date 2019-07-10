@@ -21,4 +21,4 @@
 
 ## Database Diagram
 
-![DB Diagram](https://github.com/Stroupe79/Aria-Splash/issues/1#issue-466340938)
+![DB Diagram](https://user-images.githubusercontent.com/25110136/60977151-90688680-a2f4-11e9-9161-af696641d6ca.JPG)

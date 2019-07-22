@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom"
 import './App.css';
 import Header from './components/Header/Header'
 import Navbar from './components/Navbar/Navbar'
@@ -15,11 +16,17 @@ class App extends Component {
 
   render() {
     return (
+      <Router>
       <div>
       <Header />
       <Navbar />
       <Body />
       </div>
+
+      {/* <Route path="/" exact component={Body} />
+      <Route path="/contact" exact component={Forms} />
+      <Route path="/contact" exact component={Forms} /> */}
+      </Router>
     )
   }
 

@@ -4,6 +4,9 @@ import './App.css';
 import Header from './components/Header/Header'
 import Navbar from './components/Navbar/Navbar'
 import Body from './components/Main_Body/Body'
+// import Button from './components/Button/Button'
+import { Button } from 'reactstrap';
+
 
 
 
@@ -20,6 +23,7 @@ class App extends Component {
       <div>
       <Header />
       <Navbar />
+      <Button color="danger">Danger!</Button>
       <Body />
       </div>
 

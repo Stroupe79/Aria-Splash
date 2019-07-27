@@ -61,7 +61,7 @@ export default class Navigation extends React.Component {
                 <NavLink><Link to="/about">About Us</Link></NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/rates">Rates</NavLink>
+                <NavLink><Link to="/rates">Rates</Link></NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>

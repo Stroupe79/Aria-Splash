@@ -64,42 +64,49 @@ const COLUMNS = [
 ];
 
 export default (
+
+) => {
+    return (
+            
   <div>
-    <Table caption='Simple Table'>
-      <TableHeader>
-        <TableRow>
-          {COLUMNS.map(c => (
-            <TableCell
-              key={c.property}
-              scope='col'
-              border='bottom'
-              align={c.align}
-            >
-              <Text>{c.label}</Text>
-            </TableCell>
-          ))}
-        </TableRow>
-      </TableHeader>
-      <TableBody>
-        {DATA.map(datum => (
-          <TableRow key={datum.id}>
-            {COLUMNS.map(c => (
-              <TableCell key={c.property} scope={c.dataScope} align={c.align}>
-                <Text>{c.format ? c.format(datum) : datum[c.property]}</Text>
-              </TableCell>
-            ))}
-          </TableRow>
+  <Table caption='Simple Table'>
+    <TableHeader>
+      <TableRow>
+        {COLUMNS.map(c => (
+          <TableCell
+            key={c.property}
+            scope='col'
+            border='bottom'
+            align={c.align}
+          >
+            <Text>{c.label}</Text>
+          </TableCell>
         ))}
-      </TableBody>
-      <TableFooter>
-        <TableRow>
+      </TableRow>
+    </TableHeader>
+    <TableBody>
+      {DATA.map(datum => (
+        <TableRow key={datum.id}>
           {COLUMNS.map(c => (
-            <TableCell key={c.property} border='top' align={c.align}>
-              <Text>{c.footer}</Text>
+            <TableCell key={c.property} scope={c.dataScope} align={c.align}>
+              <Text>{c.format ? c.format(datum) : datum[c.property]}</Text>
             </TableCell>
           ))}
         </TableRow>
-      </TableFooter>
-    </Table>
-  </div>
-);
+      ))}
+    </TableBody>
+    <TableFooter>
+      <TableRow>
+        {COLUMNS.map(c => (
+          <TableCell key={c.property} border='top' align={c.align}>
+            <Text>{c.footer}</Text>
+          </TableCell>
+        ))}
+      </TableRow>
+    </TableFooter>
+  </Table>
+</div>
+    )
+}
+;
+          

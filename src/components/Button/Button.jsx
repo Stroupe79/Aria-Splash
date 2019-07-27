@@ -4,6 +4,6 @@ import { Button } from 'reactstrap';
 
 export default (props) => {
     return (
-        <Button color="success">Danger!</Button>
+        <Button color="danger" size="lg" outline color="success" >Danger!</Button>
     )
 }

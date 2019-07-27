@@ -1,11 +1,14 @@
 import React, {Component} from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom"
+import { Button } from 'reactstrap';
 import './App.css';
+import Forms from './components/Forms/Forms'
 import Header from './components/Header/Header'
 import Navbar from './components/Navbar/Navbar'
 import Body from './components/Main_Body/Body'
+import Locale from './components/Locale/Locale.jsx'
+import Rates from './components/Rates/Rates'
 // import Button from './components/Button/Button'
-import { Button } from 'reactstrap';
 
 
 
@@ -23,13 +26,14 @@ class App extends Component {
       <div>
       <Header />
       <Navbar />
-      <Button color="danger">Danger!</Button>
+      <Button outline color="success" color="danger"  size="lg" >Danger!</Button>
+      <Route path="/about" exact component={Locale} />
+      <Route path="/rates" exact component={Rates} />
       <Body />
       </div>
 
-      {/* <Route path="/" exact component={Body} />
+      <Route path="/" exact component={Body} />
       <Route path="/contact" exact component={Forms} />
-      <Route path="/contact" exact component={Forms} /> */}
       </Router>
     )
   }

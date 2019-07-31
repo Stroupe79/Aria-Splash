@@ -12,6 +12,7 @@
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
+    "react-stripe-checkout": "^2.6.3",
     "react-stripe-elements": "^4.0.0",
     "reactstrap": "^8.0.1",
     "stripe": "^7.5.0",

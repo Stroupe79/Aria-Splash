@@ -2,7 +2,7 @@
   "name": "react-boilerplate",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:9000",
+  // "proxy": "http://localhost:9000",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "express": "^4.17.1",

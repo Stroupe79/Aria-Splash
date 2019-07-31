@@ -1,6 +1,9 @@
 const app = require("express")();
 const stripe = require("stripe")("sk_test_4eC39HqLyjWDarjtT1zdp7dc");
 
+
+var PORT = process.env.PORT || 9000;
+
 app.use(require("body-parser").text());
 
 app.post("/charge", async (req, res) => {
@@ -19,4 +22,4 @@ app.post("/charge", async (req, res) => {
   });
 
 
-  app.listen(9000, () => console.log("Listening on port 9000"));
+  app.listen(PORT, () => console.log("Listening on port " + PORT));

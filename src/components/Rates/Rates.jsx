@@ -11,6 +11,8 @@ import styled from 'styled-components';
 // import { TableRow } from '@bit/grommet.grommet.table-row';
 // import { Text } from '@bit/grommet.grommet.text';
 
+
+
 const DATA = [
   {
     id: 1,
@@ -62,6 +64,8 @@ const COLUMNS = [
     format: datum => amountFormatter.format(datum.amount / 100)
   }
 ];
+
+
 
 export default (
 

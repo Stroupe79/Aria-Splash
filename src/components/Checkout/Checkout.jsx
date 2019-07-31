@@ -25,7 +25,7 @@ export default class Checkout extends React.Component {
       name="The Aria Splash"
       stripeKey="pk_test_0eRZoTrgKYO9XlSmOYZMh3OG00JM5eHE4j"
       token={this.onToken}
-      zipCode
+      panelLabel={"$" + amount}
       label="Pay with 💳"
       />
     )

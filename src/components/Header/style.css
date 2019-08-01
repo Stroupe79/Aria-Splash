@@ -1,4 +1,10 @@
 .jumbotron {
-    color: green;
+    color: white;
     background-color: cyan;
+    text-align: center;
+    border-radius: 0 !important;
+}
+
+.jumbotron h1 {
+    font-size: 150px;
 }

@@ -11,7 +11,7 @@ class Locale extends Component {
             }
         const pos = {
             lat: 29.783090,
-        lng: -95.134470
+            lng: -95.134470
         }
 
     return (

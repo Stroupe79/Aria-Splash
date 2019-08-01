@@ -2,7 +2,7 @@
   "name": "react-boilerplate",
   "version": "0.1.0",
   "private": true,
-  // "proxy": "http://localhost:9000",
+  "proxy": "http://localhost:9000",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "express": "^4.17.1",
@@ -10,6 +10,8 @@
     "grommet": "^2.7.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-iframe": "^1.8.0",
+    "react-resize-image": "^1.0.4",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
     "react-stripe-checkout": "^2.6.3",

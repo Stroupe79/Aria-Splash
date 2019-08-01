@@ -22,8 +22,8 @@ export default class Checkout extends React.Component {
       description="Thank you!"
       image="https://i.ibb.co/fH3wJ1S/logo.png"
       locale="auto"
-      name="The Aria Splash"
-      stripeKey="pk_test_0eRZoTrgKYO9XlSmOYZMh3OG00JM5eHE4j"
+      name="Venues of Houston"
+      stripeKey="pk_test_eUDz6t2eLNfB0c4WsP7pbehh00mjTxdvog"
       token={this.onToken}
       panelLabel={"$" + amount}
       label="Pay with 💳"

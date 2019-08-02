@@ -4,7 +4,7 @@ import { Button } from 'reactstrap';
 import {Elements, StripeProvider} from 'react-stripe-elements';
 import CheckoutForm from './components/CheckoutForm/CheckoutForm'
 import Stripe from './components/Stripe/Stripe'
-// import Carousel from './components/Carousel'
+import Carousel from './components/Carousel'
 import './App.css';
 import Forms from './components/Forms/Forms'
 import Header from './components/Header/Header'
@@ -33,7 +33,7 @@ class App extends Component {
       <div>
       <Header />
       <Navbar />
-      {/* <Carousel/> */}
+      <Carousel/>
       {/* <Button outline color="success" color="danger"  size="lg">Danger!</Button> */}
       <Route path="/about" exact component={Locale} />
       <Route path="/rates" exact component={Rates} />
@@ -50,26 +50,5 @@ class App extends Component {
 
 
 }
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
 
 export default App;

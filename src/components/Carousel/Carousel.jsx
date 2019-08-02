@@ -1,58 +1,21 @@
-import React from "react";
-import Carousel from 'react-bootstrap/Carousel'
+var React = require('react');
 
+var Carousel = require('nuka-carousel');
 
-
-function ControlledCarousel() {
-    const [index, setIndex] = useState(0);
-    const [direction, setDirection] = useState(null);
-  
-    const handleSelect = (selectedIndex, e) => {
-      setIndex(selectedIndex);
-      setDirection(e.direction);
-    };
-  
+const Slides = React.createClass({
+  mixins: [Carousel.ControllerMixin],
+  render() {
     return (
-      <Carousel activeIndex={index} direction={direction} onSelect={handleSelect}>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="holder.js/800x400?text=First slide&bg=373940"
-            alt="First slide"
-          />
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="holder.js/800x400?text=Second slide&bg=282c34"
-            alt="Third slide"
-          />
-  
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="holder.js/800x400?text=Third slide&bg=20232a"
-            alt="Third slide"
-          />
-  
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
+      <Carousel>
+        <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide1"/>
+        <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide2"/>
+        <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide3"/>
+        <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide4"/>
+        <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide5"/>
+        <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide6"/>
       </Carousel>
-    );
+    )
   }
-  
-  render(<ControlledCarousel />);
+});
+
+module.exports = Slides;

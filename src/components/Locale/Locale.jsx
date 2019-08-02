@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import { Map, Marker, GoogleApiWrapper } from "google-maps-react";
 import "./style.css";
 
@@ -10,7 +10,11 @@ class Locale extends Component {
     render () {
         const style = {
             width: "50%",
-            height: "50%"
+            height: "50%",
+            position: "absolute",
+            left: "50%",
+            top: "50%",
+            transform: "translate(-50%, -50%)"
             }
         const pos = {
             lat: 29.783090,
@@ -19,7 +23,6 @@ class Locale extends Component {
         
 
     return (
-
         <Map 
         google={this.props.google} 
         zoom={12}

@@ -4,7 +4,7 @@ import { Button } from 'reactstrap';
 import {Elements, StripeProvider} from 'react-stripe-elements';
 import CheckoutForm from './components/CheckoutForm/CheckoutForm'
 import Stripe from './components/Stripe/Stripe'
-import Carousel from './components/Carousel'
+// import Slides from './components/Carousel/Carousel'
 import './App.css';
 import Forms from './components/Forms/Forms'
 import Header from './components/Header/Header'
@@ -33,13 +33,14 @@ class App extends Component {
       <div>
       <Header />
       <Navbar />
-      <Carousel/>
       {/* <Button outline color="success" color="danger"  size="lg">Danger!</Button> */}
       <Route path="/about" exact component={Locale} />
       <Route path="/rates" exact component={Rates} />
-      <Route path="/book" exact component={Stripe} />
+      <Route path="/book" exact component={Calendar} />
+      <Route path="/contact" exact component={Forms} />
       <Route path="/" exact component={()=>(<div><Wedding/><Pool/></div>)} />
-      <Calendar/>
+
+      {/* <Calendar/> */}
       {/* <Route path="/contact" component={{stripe: StripeProvider, checkout:CheckoutForm }}/> */}
       </div>
 

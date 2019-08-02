@@ -4,7 +4,7 @@ import { Button } from 'reactstrap';
 import {Elements, StripeProvider} from 'react-stripe-elements';
 import CheckoutForm from './components/CheckoutForm/CheckoutForm'
 import Stripe from './components/Stripe/Stripe'
-import Carousel from './components/Carousel'
+// import Carousel from './components/Carousel'
 import './App.css';
 import Forms from './components/Forms/Forms'
 import Header from './components/Header/Header'

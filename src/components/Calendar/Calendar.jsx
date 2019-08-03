@@ -12,6 +12,7 @@ width="1000px"
 height="1500px"
 background-color="transparent"
 allowtransparency="true"
+loading="Loading....."
 />
 );
 };

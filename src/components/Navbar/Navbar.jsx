@@ -13,6 +13,8 @@ import {
   DropdownMenu,
   DropdownItem } from 'reactstrap';
   import { BrowserRouter as Router, Route, Link } from "react-router-dom"
+  import "./style.css";
+
 
 
 export default class Navigation extends React.Component {
@@ -32,13 +34,13 @@ export default class Navigation extends React.Component {
   render() {
     return (
       <div>
-        <Navbar color="light" light expand="md">
-          <NavbarBrand id="nav"><Link to="/">Aria Splash</Link></NavbarBrand>
+        <Navbar id="nav" className="nav-fill fixed-top" light expand="md">
+          <NavbarBrand><Link to="/">Aria Splash</Link></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
+            <Nav className="ml-auto" navbar fill>
               <NavItem>
-                <NavLink><Link to="/about">About Us</Link></NavLink>
+                <NavLink><Link  to="/about">About Us</Link></NavLink>
               </NavItem>
               <NavItem>
                 <NavLink><Link to="/book">Book now!</Link></NavLink>

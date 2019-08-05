@@ -10,9 +10,8 @@ function Wedding () {
         <ResizeImage
         src={Wedding2}
         alt="Wedding Venue"
-        options={{width: 100}}
+        options={{width: '25%'}}
         />
-        // <div><img src={Wedding2}/></div>
     );
 }
 

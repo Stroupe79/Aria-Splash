@@ -13,13 +13,14 @@ class Header extends Component {
       backgroundImage: 'url(' + Background + ')',
       margin: "0rem"
     }
+
+
   
   return (
     <div>
       <Jumbotron style={styles}>
         <h1 className="display-3">Venues of Houston</h1>
         <p className="lead">Three venues located conveniently in one location!</p>
-        <hr className="my-2" />
         <p className="lead">
         </p>
       </Jumbotron>

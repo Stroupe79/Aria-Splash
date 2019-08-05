@@ -32,3 +32,8 @@
     transform: rotate(360deg);
   }
 }
+
+@font-face {
+  font-family: 'painter';
+  src: url('./Painter-LxXg.ttf')
+}

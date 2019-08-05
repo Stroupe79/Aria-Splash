@@ -1,36 +1,31 @@
-// import React from "react";
-// import "./style.css";
-
-
-
-
-// function Header () {
-  //     return (
-    //         <div>Aria Splash</div>
-    //     );
-    // }
-    
-    
-    // export default Header
-    
     
     import React from 'react';
+    import { Component } from 'react';
     import { Jumbotron, Button } from 'reactstrap';
     import "./style.css";
+    import Background from '../../util/images/back4.jpeg'
 
-const Header = (props) => {
+
+
+class Header extends Component {
+  render () {
+    const styles = {
+      backgroundImage: 'url(' + Background + ')',
+      margin: "0rem"
+    }
+  
   return (
     <div>
-      <Jumbotron style={{margin:"0rem"}}>
-        <h1 className="display-3">Aria Splash</h1>
-        <p className="lead">This is a simple hero unit, a simple Jumbotron-style component for calling extra attention to featured content or information.</p>
+      <Jumbotron style={styles}>
+        <h1 className="display-3">Venues of Houston</h1>
+        <p className="lead">Three venues located conveniently in one location!</p>
         <hr className="my-2" />
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
         <p className="lead">
         </p>
       </Jumbotron>
     </div>
   );
 };
+}
 
 export default Header;

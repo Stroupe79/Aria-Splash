@@ -1,9 +1,9 @@
 import React from "react";
 import { Button } from 'reactstrap';
-// import "./style.css";
+import "./style.css";
 
 export default (props) => {
     return (
-        <Button color="danger" size="lg" outline color="success" >Danger!</Button>
+        <Button className="bottomright demo" size="lg" outline color="success" >Danger!</Button>
     )
 }

@@ -4,40 +4,69 @@ import { Button } from 'reactstrap';
 import {Elements, StripeProvider} from 'react-stripe-elements';
 import CheckoutForm from './components/CheckoutForm/CheckoutForm'
 import Stripe from './components/Stripe/Stripe'
+// import Slides from './components/Carousel/Carousel'
 import './App.css';
 import Forms from './components/Forms/Forms'
 import Header from './components/Header/Header'
 import Navbar from './components/Navbar/Navbar'
-import Body from './components/Main_Body/Body'
+import Body from './components/Main_Body/Wedding'
 import Locale from './components/Locale/Locale.jsx'
 import Rates from './components/Rates/Rates'
+import Calendar from './components/Calendar/Calendar';
+import Wedding from './components/Main_Body/Wedding';
+import Pool from './components/Main_Body/Pool';
+import Popup from './components/Popup/Popup'
+import Helmet from 'react-helmet';
 // import Button from './components/Button/Button'
 
 
 
 
 class App extends Component {
-  state = {
-    // bookings shows upcoming availability on main page
-    bookings:""
-  }
+  constructor(props){  
+    super(props);  
+    this.state = { showPopup: false };  
+    }  
+    
+      togglePopup() {  
+    this.setState({  
+         showPopup: !this.state.showPopup  
+    });  
+     }  
 
 
   render() {
     return (
       <Router>
       <div>
+        {/* <Helmet bodyAttributes={{style: 'background-color : #fff'}}> */}
       <Header />
       <Navbar />
-      <Button outline color="success" color="danger"  size="lg">Danger!</Button>
+      {/* <Button outline color="success" color="danger"  size="lg">Danger!</Button> */}
       <Route path="/about" exact component={Locale} />
       <Route path="/rates" exact component={Rates} />
-      <Route path="/book" exact component={Stripe} />
+      <Route path="/book" exact component={Calendar} />
+      <Route path="/contact" exact component={Forms} />
+      <Route path="/" exact component={()=>(<div><Wedding/><Pool/></div>)} />
+
+
+      <div>  
+      <h1> Questions? </h1>  
+      <Button onClick={this.togglePopup.bind(this)} text={"Contact us!"}></Button>  
+
+          {this.state.showPopup ?  
+        <Popup  
+          text="We'd love to hear from you!"  
+          closePopup={this.togglePopup.bind(this)}  
+        />  
+        : null  
+        }   
+        </div>  
+      {/* <Calendar/> */}
       {/* <Route path="/contact" component={{stripe: StripeProvider, checkout:CheckoutForm }}/> */}
-      <Body />
+      {/* </Helmet> */}
       </div>
 
-      <Route path="/" exact component={Body} />
       </Router>
     )
   }
@@ -45,26 +74,5 @@ class App extends Component {
 
 
 }
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
 
 export default App;

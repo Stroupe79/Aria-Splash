@@ -28,3 +28,9 @@
     border-radius: 20px;  
     background: red;   */
   }
+
+  .bottomright {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}

@@ -1,6 +1,19 @@
-/* #box {
-    width:500px;
-    height:100px;
-    border:1px solid #000;
-    transform: rotate(45deg);
-} */
+.wedding{
+    float: right;
+    padding: 10px;
+}
+
+.pool {
+    float: left;
+    padding: 10px;
+}
+
+p{
+    font-size: 50px;
+    display: block;
+}
+
+table {
+    font-size: 35px;
+    margin: auto;
+}

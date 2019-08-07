@@ -3,6 +3,10 @@
     padding: 10px;
 }
 
+thead tr td th {
+    color: red;
+}
+
 .pool {
     float: left;
     padding: 10px;

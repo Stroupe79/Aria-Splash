@@ -15,11 +15,13 @@ import {
   import { BrowserRouter as Router, Route, Link } from "react-router-dom"
   import "./style.css";
 
-
-
+  
+  
 export default class Navigation extends React.Component {
   constructor(props) {
     super(props);
+
+   
 
     this.toggle = this.toggle.bind(this);
     this.state = {
@@ -35,21 +37,21 @@ export default class Navigation extends React.Component {
     return (
       <div>
         <Navbar id="nav" className="nav-fill fixed-top" light expand="md">
-          <NavbarBrand><Link to="/">Aria Splash</Link></NavbarBrand>
+          <NavbarBrand><Link to="/" style={{ textDecoration: 'none' }}>Home</Link></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar fill>
               <NavItem>
-                <NavLink><Link  to="/about">About Us</Link></NavLink>
+                <NavLink><Link  to="/about" style={{ textDecoration: 'none'}}>About Us</Link></NavLink>
               </NavItem>
               <NavItem>
-                <NavLink><Link to="/book">Book now!</Link></NavLink>
+                <NavLink><Link to="/book" style={{ textDecoration: 'none' }}>Book now!</Link></NavLink>
               </NavItem>
               <NavItem>
-                <NavLink><Link to="/rates">Rates</Link></NavLink>
+                <NavLink><Link to="/rates" style={{ textDecoration: 'none' }}>Rates</Link></NavLink>
               </NavItem>
               <NavItem>
-                <NavLink><Link to="/contact">Contact Us</Link></NavLink>
+                <NavLink><Link to="/contact" style={{ textDecoration: 'none' }}>Contact Us</Link></NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>

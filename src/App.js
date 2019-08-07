@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom"
+import { CSSTransitionGroup } from 'react-transition-group'
 import { Button } from 'reactstrap';
 import {Elements, StripeProvider} from 'react-stripe-elements';
 import CheckoutForm from './components/CheckoutForm/CheckoutForm'
@@ -39,37 +40,26 @@ class App extends Component {
   render() {
     return (
       <Router>
+
       <div>
-        {/* <Helmet bodyAttributes={{style: 'background-color : #fff'}}> */}
+      {/* <CSSTransitionGroup
+      transitionName="example"
+      transitionAppear={true}
+      transitionAppearTimeout={500}
+      transitionEnter={false}
+      transitionLeave={false}>
+      </CSSTransitionGroup> */}
       <Header />
       <Navbar />
       <Contact/>
-      {/* <Button outline color="success" color="danger"  size="lg">Danger!</Button> */}
       <Route path="/about" exact component={Locale} />
       <Route path="/rates" exact component={Rates} />
       <Route path="/book" exact component={Calendar} />
       <Route path="/contact" exact component={Forms} />
+      
       <Route path="/" exact component={()=>(<div><Wedding/><Pool/></div>)} />
 
 
-{/* Popup section */}
-      {/* <div>  
-      <h1> Questions? </h1>  
-      <Button onClick={this.togglePopup.bind(this)} text={"Contact us!"}></Button>  
-
-          {this.state.showPopup ?  
-        <Popup  
-          text="We'd love to hear from you!"  
-          closePopup={this.togglePopup.bind(this)}  
-        />  
-        : null  
-        }   
-        </div>  
- */}
-
-      {/* <Calendar/> */}
-      {/* <Route path="/contact" component={{stripe: StripeProvider, checkout:CheckoutForm }}/> */}
-      {/* </Helmet> */}
       </div>
 
       </Router>

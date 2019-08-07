@@ -20,6 +20,7 @@
     "react-scripts": "3.0.1",
     "react-stripe-checkout": "^2.6.3",
     "react-stripe-elements": "^4.0.0",
+    "react-transition-group": "^4.2.2",
     "reactstrap": "^8.0.1",
     "stripe": "^7.5.0",
     "styled-components": "^4.3.2"

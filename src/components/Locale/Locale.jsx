@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { Map, Marker, GoogleApiWrapper } from "google-maps-react";
+import { Card } from "reactstrap"
 import "./style.css";
 
 
@@ -24,7 +25,6 @@ class Locale extends Component {
 
     return (
         // <div className="react-transition swipe-right" style={{backgroundColor: "pink", animationDuration: '1s'}}>
-
         <Map 
         google={this.props.google} 
         zoom={12}
@@ -34,10 +34,10 @@ class Locale extends Component {
         }}
         style={style}
         >
-        <h2>Located in Channelview, it's conveniently located at the corner of Beltway 8 and I-10 making it accessible from any direction in the city.</h2>
+        <h2 style={{ backgroundColor: '#fef2f2' }} className="m-5 border" >Located in Channelview, it's conveniently located at the corner of Beltway 8 and I-10 making it accessible from any direction in the city.</h2>
         <Marker position={pos} />
         </Map>
-        // </div>
+        
         );
         };
     }

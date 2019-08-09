@@ -9,7 +9,7 @@ import Contact from '../Collapse/Collapse'
 
 function Pool () {
     return (
-        <div className="react-transition swipe-left" style={{backgroundColor: "black", animationDuration: '1s'}}>
+        <div className="react-transition swipe-left m-5" style={{backgroundColor: "black", animationDuration: '1s'}}>
         <Card>
         <div className="mt-5 mb-5">
         <img className="pool" src="https://cdn.architecturendesign.net/wp-content/uploads/2014/09/2-e1410047123343.png"

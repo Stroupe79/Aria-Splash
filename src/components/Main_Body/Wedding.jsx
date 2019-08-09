@@ -6,23 +6,18 @@ import ResizeImage from 'react-resize-image'
 import {Card, Table} from 'reactstrap'
 
 const Wedding = ({show}) => {
-    const componentClasses = ['left-transition'];
-    if (show) {componentClasses.push('show'); }
     return (
-        <div className="react-transition swipe-right" style={{backgroundColor: "black", animationDuration: '1s'}}>
+        <div className="react-transition swipe-right m-5" style={{animationDuration: '1s', backgroundColor: '#bef1e9'}}>
         <Card>
-            <div>
-      <div className={componentClasses.join(' ')}></div>
+            <div className="m-5">
 
       
-        <p>Rent the barn for your wedding! Beautiful rustic location that will give you an experince you'll never forget and cherish forever!
-
-<img className="wedding" src="https://cdn0.weddingwire.com/img_g/ww/t30_fairview-farm.jpg"
+        <p>Rent the barn for your wedding! Beautiful rustic location that will give you an experince you'll never forget and cherish forever! </p>
+        <img className="wedding m-5" src="https://cdn0.weddingwire.com/img_g/ww/t30_fairview-farm.jpg"
         alt="Wedding Venue"
         />
 
-</p>
-        <Table responsive>
+        <Table bordered>
         <thead>
   <tr>
     <th>Rates</th>

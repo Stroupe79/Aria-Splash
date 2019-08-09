@@ -20,7 +20,6 @@ import {
 export default class Navigation extends React.Component {
   constructor(props) {
     super(props);
-
    
 
     this.toggle = this.toggle.bind(this);
@@ -34,10 +33,12 @@ export default class Navigation extends React.Component {
     });
   }
   render() {
+
+
     return (
       <div className="react-transition fade-in" style={{animationDuration: '1s'}}>
 
-        <Navbar id="nav" className="fixed-top pill" light expand="md">
+        <Navbar id="nav" className="nav-filled fixed-top" fixed="top" light expand="md">
           <NavbarBrand><Link to="/" style={{ textDecoration: 'none' }}>Home</Link></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>

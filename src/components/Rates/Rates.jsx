@@ -1,6 +1,7 @@
 import React from 'react';
 import { Table, TableHeader, TableFooter, TableBody, TableRow, TableCell, Text } from 'grommet';
 import styled from 'styled-components';
+import Contact from '../Collapse/Collapse'
 
 // import React from 'react';
 // import { Table } from '@bit/grommet.grommet.table';
@@ -109,6 +110,7 @@ export default (
       </TableRow>
     </TableFooter>
   </Table>
+  <Contact/>
 </div>
     )
 }

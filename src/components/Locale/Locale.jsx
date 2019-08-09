@@ -23,6 +23,8 @@ class Locale extends Component {
         
 
     return (
+        // <div className="react-transition swipe-right" style={{backgroundColor: "pink", animationDuration: '1s'}}>
+
         <Map 
         google={this.props.google} 
         zoom={12}
@@ -32,12 +34,14 @@ class Locale extends Component {
         }}
         style={style}
         >
+        <h2>Located in Channelview, it's conveniently located at the corner of Beltway 8 and I-10 making it accessible from any direction in the city.</h2>
         <Marker position={pos} />
         </Map>
+        // </div>
         );
         };
     }
-
+    
         export default GoogleApiWrapper({
             apiKey: ('AIzaSyCz9Oqs4sXoDiZY7AwH9uUsHYdOru4Kr9w'),
             version: 3.31

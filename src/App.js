@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom"
-import { CSSTransitionGroup } from 'react-transition-group'
+import { CSSTransitionGroup, Transition } from 'react-transition-group'
 import { Button } from 'reactstrap';
 import {Elements, StripeProvider} from 'react-stripe-elements';
 import CheckoutForm from './components/CheckoutForm/CheckoutForm'
@@ -19,8 +19,8 @@ import Pool from './components/Main_Body/Pool';
 import Popup from './components/Popup/Popup'
 import Helmet from 'react-helmet';
 import Contact from './components/Collapse/Collapse'
+import './react-transitions.css'
 // import Button from './components/Button/Button'
-
 
 
 
@@ -28,46 +28,52 @@ class App extends Component {
   constructor(props){  
     super(props);  
     this.state = { showPopup: false };  
-    }  
-    
-      togglePopup() {  
+  }  
+  
+  togglePopup() {  
     this.setState({  
-         showPopup: !this.state.showPopup  
+      showPopup: !this.state.showPopup  
     });  
-     }  
+  }  
+  
 
-
+  
   render() {
+    const style ={
+      backgroundColor: 'black'
+    }
     return (
+     
+        <div className="transition-container">
+      <div  className={style}>
       <Router>
 
-      <div>
       {/* <CSSTransitionGroup
       transitionName="example"
       transitionAppear={true}
       transitionAppearTimeout={500}
       transitionEnter={false}
       transitionLeave={false}>
-      </CSSTransitionGroup> */}
+    </CSSTransitionGroup> */}
       <Header />
       <Navbar />
-      <Contact/>
+      
       <Route path="/about" exact component={Locale} />
-      <Route path="/rates" exact component={Rates} />
       <Route path="/book" exact component={Calendar} />
       <Route path="/contact" exact component={Forms} />
+      <Route path="/rates" exact component={Rates} />
       
-      <Route path="/" exact component={()=>(<div><Wedding/><Pool/></div>)} />
+      <Route path="/" exact component={()=>(<div><Wedding/><Pool/></div>)}/>
 
-
-      </div>
 
       </Router>
+      </div>
+    </div>
     )
   }
-
-
-
+  
+  
+  
 }
 
 export default App;

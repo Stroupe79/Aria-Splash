@@ -22,6 +22,7 @@ class CheckoutForm extends Component {
   } 
 
   render() {
+    
     if (this.state.complete) return <h1>Purchase Complete</h1>;
     return (
       <div className="checkout">

@@ -17,14 +17,17 @@ class Header extends Component {
 
   
   return (
+    <div className="react-transition fade-in" style={{animationDuration: '1s'}}>
+
     <div>
       <Jumbotron style={styles}>
         <h1 className="display-3">Venues of Houston</h1>
-        <p className="lead">Three venues located conveniently in one location!</p>
+        <p className="lead">Two great venues located conveniently in one location!</p>
         <p className="lead">
         </p>
       </Jumbotron>
     </div>
+  </div>
   );
 };
 }

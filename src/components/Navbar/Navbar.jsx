@@ -35,8 +35,9 @@ export default class Navigation extends React.Component {
   }
   render() {
     return (
-      <div>
-        <Navbar id="nav" className="nav-fill fixed-top" light expand="md">
+      <div className="react-transition fade-in" style={{animationDuration: '1s'}}>
+
+        <Navbar id="nav" className="fixed-top pill" light expand="md">
           <NavbarBrand><Link to="/" style={{ textDecoration: 'none' }}>Home</Link></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
@@ -53,23 +54,6 @@ export default class Navigation extends React.Component {
               <NavItem>
                 <NavLink><Link to="/contact" style={{ textDecoration: 'none' }}>Contact Us</Link></NavLink>
               </NavItem>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
-                  Options
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem>
-                    Option 1
-                  </DropdownItem>
-                  <DropdownItem>
-                    Option 2
-                  </DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>
-                    Reset
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
             </Nav>
           </Collapse>
         </Navbar>

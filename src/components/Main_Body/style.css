@@ -3,7 +3,25 @@
     padding: 10px;
 }
 
-thead tr td th {
+.left-transition {
+    
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+        opacity: 0;
+        visibility: hidden; 
+      
+    }
+    
+    .left-transition.show {
+      opacity: 1;
+      visibility: visible; 
+    }
+table.thead tr td th {
     color: red;
 }
 

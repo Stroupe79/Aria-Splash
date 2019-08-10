@@ -26,10 +26,9 @@ class Locale extends Component {
         
 
     return (
-        <div className="react-transition swipe-up" style={{ animationDuration: '1s'}}>
+        <div className="react-transition fade-in" style={{ animationDuration: '1s'}}>
         <div>
         <h2 style={{ backgroundColor: '#fef2f2', height:300}} className="m-5 border" >Located in Channelview, it's conveniently located at the corner of Beltway 8 and I-10 making it accessible from any direction in the city.</h2>
-        </div>
         <Map
         google={this.props.google} 
         zoom={12}
@@ -42,6 +41,7 @@ class Locale extends Component {
         <Marker position={pos} />
         </Map>
         
+        </div>
         </div>
         );
         };

@@ -7,7 +7,7 @@ class Combined extends Component {
 render () {
 
     return (
-    <div>
+    <div className='rowC'>
     <WeddingCard />
     <PoolCard />
     </div>

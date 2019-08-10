@@ -14,12 +14,15 @@ import Body from './components/Main_Body/Wedding'
 import Locale from './components/Locale/Locale.jsx'
 import Rates from './components/Rates/Rates'
 import Calendar from './components/Calendar/Calendar';
+import Combined from './components/Main_Body/Combined'
 import Wedding from './components/Main_Body/Wedding';
 import Pool from './components/Main_Body/Pool';
 import Popup from './components/Popup/Popup'
 import Helmet from 'react-helmet';
 import Contact from './components/Collapse/Collapse'
 import './react-transitions.css'
+import WeddingCard from './components/Main_Body/Wedding-card'
+import PoolCard from './components/Main_Body/Pool-card'
 // import Button from './components/Button/Button'
 
 
@@ -63,7 +66,8 @@ class App extends Component {
       <Route path="/contact" exact component={Forms} />
       <Route path="/rates" exact component={Rates} />
       
-      <Route path="/" exact component={()=>(<div><Wedding/><Pool/></div>)}/>
+      <Route path="/" exact component={Combined}/>
+      {/* <Route path="/" exact component={()=>(<div><WeddingCard/><PoolCard/></div>)}/> */}
 
 
       </Router>

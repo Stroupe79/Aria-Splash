@@ -72,7 +72,7 @@ import Table from '../Main_Body/Table'
 export default () => {
     return (
             
-  <div>
+  <div className="card react-transition fade-in" style={{animationDuration: '1s'}}>
     <Table />
 </div>
     )

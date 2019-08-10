@@ -34,14 +34,14 @@ class Calendar extends React.Component {
   render() {
       return (
         <div className="container rsvp-wrapper" >
-          {this.state.loading ? (
+          {/* {this.state.loading ? (
             <Spinner
               className="loading text-center"
               name="three-bounce"
               color="white"
               fadeIn="none"
             />
-          ) : null}
+          ) : null} */}
            <Iframe frameBorder="0" url='https://houstonvenues.youcanbook.me/?noframe=true&skipHeaderFooter=true'
             id="ycbmiframehoustonvenues"
             width="1000px"

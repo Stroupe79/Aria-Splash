@@ -10,7 +10,8 @@
 class Header extends Component {
   render () {
     const styles = {
-      backgroundImage: 'url(' + Background + ')',
+      
+      // backgroundImage: 'url(' + Background + ')',
       margin: "0rem"
     }
 

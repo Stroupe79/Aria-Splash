@@ -1,15 +1,19 @@
 @font-face {
-    font-family: 'painter';
-    src: url('../../fonts/Painter-LxXg.ttf')
+    font-family: 'josefin';
+    src: url('../../fonts/JosefinSans-Bold.ttf')
   }
+
+  
   
 
 .jumbotron {
     color: #BEF1E8;
     text-align: center;
     border-radius: 0 !important;
-    font-family: 'painter';
+    font-family: 'josefin';
     background-size: cover;
+    background: -webkit-linear-gradient(88deg, rgba(242,181,193,1) 0%, rgba(242,181,193,1) 25%, rgba(104,182,199,1) 68%, rgba(2,184,204,1) 100%);
+    /* background: -webkit-linear-gradient(88deg, rgba(242,181,193,1) 0%, rgba(242,181,193,1) 33%, rgba(222,144,144,1) 68%, rgba(204,112,100,1) 100%); */
 }
 
 .jumbotron h1 {

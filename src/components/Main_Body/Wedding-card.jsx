@@ -67,7 +67,7 @@ function WeddingCard() {
 
   return (
     // <div className="react-transition swipe-left m-5" style={{animationDuration: '1s'}}>
-    <Card raised='true' className="card react-transition swipe-left m-5" style={{animationDuration: '1s'}}>
+    <Card raised='true' className="card react-transition swipe-left" style={{animationDuration: '1s'}}>
       <CardActionArea>
         <CardMedia
           className="media"

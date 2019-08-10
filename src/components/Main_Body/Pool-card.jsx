@@ -67,7 +67,7 @@ function PoolCard() {
 
   return (
     // <div className="react-transition swipe-right m-5" style={{animationDuration: '1s'}}>
-    <Card raised='true' className="card react-transition swipe-right m-5" style={{animationDuration: '1s'}}>
+    <Card raised='true' className="card react-transition swipe-right" style={{animationDuration: '1s'}}>
       <CardActionArea>
         <CardMedia
           className="media"

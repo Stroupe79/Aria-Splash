@@ -15,7 +15,9 @@ class Locale extends Component {
             position: "absolute",
             left: "50%",
             top: "50%",
-            transform: "translate(-50%, -50%)"
+            transform: "translate(-50%, -50%)",
+            width: 500,
+            height: 500,
             }
         const pos = {
             lat: 29.783090,
@@ -24,20 +26,23 @@ class Locale extends Component {
         
 
     return (
-        // <div className="react-transition swipe-right" style={{backgroundColor: "pink", animationDuration: '1s'}}>
-        <Map 
+        <div className="react-transition swipe-up" style={{ animationDuration: '1s'}}>
+        <div>
+        <h2 style={{ backgroundColor: '#fef2f2', height:300}} className="m-5 border" >Located in Channelview, it's conveniently located at the corner of Beltway 8 and I-10 making it accessible from any direction in the city.</h2>
+        </div>
+        <Map
         google={this.props.google} 
         zoom={12}
         initialCenter={{
             lat: 29.783090,
-            lng: -95.134470
+            lng: -95.134470,
         }}
         style={style}
         >
-        <h2 style={{ backgroundColor: '#fef2f2' }} className="m-5 border" >Located in Channelview, it's conveniently located at the corner of Beltway 8 and I-10 making it accessible from any direction in the city.</h2>
         <Marker position={pos} />
         </Map>
         
+        </div>
         );
         };
     }

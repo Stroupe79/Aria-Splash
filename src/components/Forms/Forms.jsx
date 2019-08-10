@@ -29,9 +29,9 @@ state = {
 
     render() {
         return (
-            <div className="react-transition fade-in m-5">
+            <div className="react-transition fade-in m-5" style={{animationDuration: '1s'}}>
 
-            <div style={{marginTop: 10}}>
+            <div style={{margin: 'auto', padding:50, width:1250, backgroundColor: '#fef2f2'}}>
                 <h3>Questions?</h3>
                 <form>
                     <div className="form-group">

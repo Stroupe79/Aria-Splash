@@ -1,0 +1,19 @@
+.wrapper {
+    width: 60%;
+    height: 60%;
+    margin: auto;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    background-color: #72b6c7;
+    border-radius: 75px;
+    opacity: .5;
+}
+
+#borderimg1 {
+    border: 10px solid transparent;
+    padding: 15px;
+    -webkit-border-image: url(https://mdn.mozillademos.org/files/6007/border-image-1.png) 50 round; /* Safari 3.1-5 */
+    -o-border-image: url(https://mdn.mozillademos.org/files/6007/border-image-1.png) 50 round; /* Opera 11-12.1 */
+    border-image: url(https://mdn.mozillademos.org/files/6007/border-image-1.png) 50 round;
+  }
+  

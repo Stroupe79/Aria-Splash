@@ -38,7 +38,7 @@ export default class Navigation extends React.Component {
     return (
       <div className="react-transition fade-in" style={{animationDuration: '1s'}}>
 
-        <Navbar id="nav" className="nav-filled fixed-top" fixed="top" light expand="md">
+        <Navbar id="nav" className="nav-filled fixed-top" light expand="md">
           <NavbarBrand><Link to="/" style={{ textDecoration: 'none' }}>Home</Link></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>

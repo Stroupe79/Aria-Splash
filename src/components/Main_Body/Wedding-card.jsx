@@ -81,10 +81,10 @@ function WeddingCard() {
           <Typography variant="body2" color="textSecondary" component="p">
           Rent the barn for your wedding! Beautiful rustic location that will give you an experince you'll never forget and cherish forever!
           </Typography>
+        <Table />
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Table />
       </CardActions>
     </Card>
     // </div>

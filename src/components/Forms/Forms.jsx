@@ -24,11 +24,16 @@ state = {
               name: value
             });
             // console.log(this.state.name)
-          };
-    
-
-    render() {
-        return (
+        };
+        
+        
+                    componentDidMount(){
+                        document.body.style.background = "#f3b6c2";
+                       }
+                
+        
+        render() {
+            return (
             <div className="react-transition fade-in m-5" style={{animationDuration: '1s'}}>
 
             <div style={{margin: 'auto', padding:50, width:1250, backgroundColor: '#fef2f2'}}>
@@ -47,7 +52,7 @@ state = {
                         <input type="text" className="form-control"/>
                     </div>
                     <div className="form-group">
-                        <input type="submit" onChange={this.handleInputChange}  value="Contact us!" className="btn btn-success"/>
+                        <input type="submit" onChange={this.handleInputChange} onClick={this.handleFormSubmit}  value="Contact us!" className="btn btn-success"/>
                     </div>
                 </form>
             </div>

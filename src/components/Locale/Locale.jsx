@@ -6,7 +6,10 @@ import "./style.css";
 
 class Locale extends Component {
 
-    
+    componentDidMount(){
+        document.body.style.background = "#f3b6c2";
+       }
+
 
     render () {
         const style = {

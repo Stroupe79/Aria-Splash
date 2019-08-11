@@ -8,6 +8,9 @@
 
 
 class Header extends Component {
+  componentDidMount(){
+    document.body.style.background = "#f3b6c2";
+   }
   render () {
     const styles = {
       

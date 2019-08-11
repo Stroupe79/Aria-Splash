@@ -17,7 +17,7 @@ export default class Wrapper extends Component {
     render() {
         return (
 
-           <div id="borderimg1" className="wrapper react-transition fade-in" style={{animationDuration: '2s'}}>
+           <div className="wrapper react-transition fade-in" style={{animationDuration: '2s'}}>
            <div className='rowC'>
     <WeddingCard />
     <PoolCard />
@@ -28,3 +28,16 @@ export default class Wrapper extends Component {
     }
 }
  
+// const Wrapper = ({children}) =>
+
+//     (
+
+//            <div className="wrapper react-transition fade-in" style={{animationDuration: '2s'}}>
+//            <div className='rowC'>
+//     <div>{children}</div>
+//     </div>
+
+//             </div>
+//         )
+   
+//         export default Wrapper

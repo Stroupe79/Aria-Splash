@@ -24,6 +24,7 @@ import './react-transitions.css'
 import WeddingCard from './components/Main_Body/Wedding-card'
 import PoolCard from './components/Main_Body/Pool-card'
 // import Button from './components/Button/Button'
+import Table from './components/Main_Body/Table'
 
 
 
@@ -64,7 +65,7 @@ class App extends Component {
       <Route path="/about" exact component={Locale} />
       <Route path="/book" exact component={Calendar} />
       <Route path="/contact" exact component={Forms} />
-      <Route path="/rates" exact component={Rates} />
+      <Route path="/rates" exact component={Table} />
       
       <Route path="/" exact component={Combined}/>
       {/* <Route path="/" exact component={()=>(<div><WeddingCard/><PoolCard/></div>)}/> */}

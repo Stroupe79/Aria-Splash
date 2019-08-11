@@ -26,6 +26,11 @@ class Calendar extends React.Component {
         loading: true
       };
     }
+
+    componentDidMount(){
+        document.body.style.background = "#f3b6c2";
+       }
+
   hideSpinner = () => {
       this.setState({
         loading: false

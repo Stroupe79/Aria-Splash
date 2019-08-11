@@ -3,6 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Contact from '../Collapse/Collapse'
 import Table from '../Main_Body/Table'
+import 'reactstrap'
 
 // import React from 'react';
 // import { Table } from '@bit/grommet.grommet.table';
@@ -70,11 +71,15 @@ import Table from '../Main_Body/Table'
 
 
 export default () => {
+  
     return (
-            
-  <div className="card react-transition fade-in" style={{animationDuration: '1s'}}>
+  
+      
+  <div id="rateTable" className="card react-transition fade-in" style={{animationDuration: '1s'}}>
     <Table />
 </div>
-    )
+ 
+
+)
 }
      

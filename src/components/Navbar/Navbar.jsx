@@ -39,21 +39,21 @@ export default class Navigation extends React.Component {
       <div className="react-transition fade-in" style={{animationDuration: '1s'}}>
 
         <Navbar id="nav" className="nav-filled fixed-top" light expand="md">
-          <NavbarBrand><Link to="/" style={{ textDecoration: 'none' }}>Home</Link></NavbarBrand>
+          <NavbarBrand><Link to="/" style={{ color:"black", textDecoration: 'none' }}>Home</Link></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar fill>
               <NavItem>
-                <NavLink><Link  to="/about" style={{ textDecoration: 'none'}}>About Us</Link></NavLink>
+                <NavLink><Link  to="/about" style={{ color:"black", textDecoration: 'none'}}>About Us</Link></NavLink>
               </NavItem>
               <NavItem>
-                <NavLink><Link to="/book" style={{ textDecoration: 'none' }}>Book now!</Link></NavLink>
+                <NavLink><Link to="/rates" style={{color:"black", textDecoration: 'none' }}>Rates</Link></NavLink>
               </NavItem>
               <NavItem>
-                <NavLink><Link to="/rates" style={{ textDecoration: 'none' }}>Rates</Link></NavLink>
+                <NavLink><Link to="/book" style={{color:"black", textDecoration: 'none' }}>Book Now!</Link></NavLink>
               </NavItem>
               <NavItem>
-                <NavLink><Link to="/contact" style={{ textDecoration: 'none' }}>Contact Us</Link></NavLink>
+                <NavLink><Link to="/contact" style={{color:"black", textDecoration: 'none' }}>Contact Us</Link></NavLink>
               </NavItem>
             </Nav>
           </Collapse>

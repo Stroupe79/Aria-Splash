@@ -13,8 +13,8 @@ import MaterialTable from 'material-table'
         <ul className="price">
           <li className="header">The Barn</li>
           <li className="grey">Full Day</li>
+          <li>$1500</li>
           <li>8am - 8pm</li>
-          <li>Up to 300 guests</li>
           <li>72 Hour Cancellation Policy</li>
           <li className="grey"><a href="/book" className="button">Book</a></li>
         </ul>
@@ -23,28 +23,28 @@ import MaterialTable from 'material-table'
               <ul className="price">
                 <li className="header">The Barn</li>
                 <li className="grey">Half Day</li>
-                <li>8am - 8pm</li>
-                <li>Up to 300 guests</li>
+                <li>$750</li>
+                <li>8am - 2pm or 2pm - 8pm</li>
                 <li>72 Hour Cancellation Policy</li>
                 <li className="grey"><a href="/book" className="button">Book</a></li>
               </ul>
             </div>
             <div className="columns">
               <ul className="price">
-                <li className="header">The Barn</li>
+                <li className="header">The Pool</li>
                 <li className="grey">Full Day</li>
-                <li>8am - 8pm</li>
-                <li>Up to 300 guests</li>
+                <li>$1500</li>
+                <li>8am - 2pm or 2pm - 8pm</li>
                 <li>72 Hour Cancellation Policy</li>
                 <li className="grey"><a href="/book" className="button">Book</a></li>
               </ul>
             </div>
             <div className="columns">
               <ul className="price">
-                <li className="header">The Barn</li>
-                <li className="grey">Full Day</li>
-                <li>8am - 8pm</li>
-                <li>Up to 300 guests</li>
+                <li className="header">The Pool</li>
+                <li className="grey">Half Day</li>
+                <li>$750</li>
+                <li>8am - 2pm or 2pm - 8pm</li>
                 <li>72 Hour Cancellation Policy</li>
                 <li className="grey"><a href="/book" className="button">Book</a></li>
               </ul>

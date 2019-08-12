@@ -21,27 +21,6 @@
     height: 300px;
 }
 
-.left-transition {
-    
-        width: 100px;
-        height: 100px;
-        background-color: red;
-        -webkit-transition: 0.5s;
-        -moz-transition: 0.5s;
-        -o-transition: 0.5s;
-        transition: 0.5s;
-        opacity: 0;
-        visibility: hidden; 
-      
-    }
-    
-    .left-transition.show {
-      opacity: 1;
-      visibility: visible; 
-    }
-table.thead tr td th {
-    color: red;
-}
 
 .pool {
     float: left;
@@ -53,12 +32,6 @@ p{
     display: block;
 }
 
-/* table {
-    font-size: 35px;
-    margin: auto;
-}
-
- */
 
 * {
     box-sizing: border-box;
@@ -126,10 +99,13 @@ p{
     color: white;
     padding: 10px 25px;
     text-align: center;
-    text-decoration: none;
+    text-decoration: none !important;
     font-size: 18px;
     box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
 
+  }
+  .mainBtn {
+    display:inline-block;
   }
   
   /* Change the width of the three columns to 100% 

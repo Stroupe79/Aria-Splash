@@ -82,11 +82,18 @@ function PoolCard() {
           Rent the ultimate pool area for your outdoor party! Reunions, receptions, or just have a blowout party! This is one of the most unique pools and venues in south Texas.
         Come see for yourself!
           </Typography>
-        <Table />
         </CardContent>
       </CardActionArea>
       <CardActions>
       </CardActions>
+      <div className="rates">
+      <Button color="primary"><a href="/rates" className="button mainBtn">
+          Rates</a>
+        </Button>
+        <Button   color="primary"><a href="/book" className="button mainBtn">
+          Book Now!</a>
+        </Button>
+        </div>
     </Card>
     // </div>
   );

@@ -81,11 +81,18 @@ function WeddingCard() {
           <Typography variant="body2" color="textSecondary" component="p">
           Rent the barn for your wedding! Beautiful rustic location that will give you an experince you'll never forget and cherish forever!
           </Typography>
-        <Table />
         </CardContent>
       </CardActionArea>
       <CardActions>
       </CardActions>
+        <div className="rates">
+      <Button color="primary"><a href="/rates" className="button mainBtn">
+          Rates</a>
+        </Button>
+        <Button   color="primary"><a href="/book" className="button mainBtn">
+          Book Now!</a>
+        </Button>
+        </div>
     </Card>
     // </div>
   );

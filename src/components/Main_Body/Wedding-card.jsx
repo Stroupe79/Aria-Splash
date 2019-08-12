@@ -72,7 +72,7 @@ function WeddingCard() {
         <CardMedia
           className="media"
           image="https://cdn0.weddingwire.com/img_g/ww/t30_fairview-farm.jpg"
-          title="Contemplative Reptile"
+          title="Wedding Barn"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">

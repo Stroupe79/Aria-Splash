@@ -72,7 +72,7 @@ function PoolCard() {
         <CardMedia
           className="media"
           image="https://cdn.architecturendesign.net/wp-content/uploads/2014/09/2-e1410047123343.png"
-          title="Contemplative Reptile"
+          title="Pool"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">

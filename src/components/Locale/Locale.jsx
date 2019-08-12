@@ -17,7 +17,7 @@ class Locale extends Component {
             height: "50%",
             position: "absolute",
             left: "50%",
-            top: "50%",
+            top: "25%",
             transform: "translate(-50%, -50%)",
             width: 500,
             height: 500,
@@ -30,8 +30,8 @@ class Locale extends Component {
 
     return (
         <div className="react-transition fade-in" style={{ animationDuration: '1s'}}>
-        <div>
-        <h2 style={{ backgroundColor: '#fef2f2', height:300}} className="m-5 border" >Located in Channelview, it's conveniently located at the corner of Beltway 8 and I-10 making it accessible from any direction in the city.</h2>
+        <div id="border">
+        <h2 style={{ backgroundColor: '#72b6c7', color:"white", height:1000}} className="m-5 border" >Located in Channelview, it's conveniently located at the corner of Beltway 8 and I-10 making it accessible from any direction in the city.
         <Map
         google={this.props.google} 
         zoom={12}
@@ -43,7 +43,7 @@ class Locale extends Component {
         >
         <Marker position={pos} />
         </Map>
-        
+        </h2>
         </div>
         </div>
         );

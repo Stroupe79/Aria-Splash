@@ -49,7 +49,8 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+    margin-top: auto;
+    }
   
   /* Style the list */
   .price {

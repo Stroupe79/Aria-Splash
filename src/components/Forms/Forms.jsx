@@ -49,7 +49,7 @@ state = {
                     </div>
                     <div className="form-group">
                         <label>How can we help? </label>
-                        <input type="text" className="form-control"/>
+                        <textarea className="form-control"></textarea>
                     </div>
                     <div className="form-group">
                         <input type="submit" onChange={this.handleInputChange} onClick={this.handleFormSubmit}  value="Contact us!" className="btn btn-success"/>

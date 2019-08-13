@@ -52,7 +52,7 @@ state = {
                         <textarea className="form-control"></textarea>
                     </div>
                     <div className="form-group">
-                        <input type="submit" onChange={this.handleInputChange} onClick={this.handleFormSubmit}  value="Contact us!" className="btn btn-success"/>
+                        <input type="submit" onChange={this.handleInputChange} value="Contact us!" className="btn btn-success"/>
                     </div>
                 </form>
             </div>
@@ -60,4 +60,4 @@ state = {
         )
     }
 }
- 
+// onClick={this.handleFormSubmit}

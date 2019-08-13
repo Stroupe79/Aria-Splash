@@ -25,6 +25,7 @@ import WeddingCard from './components/Main_Body/Wedding-card'
 import PoolCard from './components/Main_Body/Pool-card'
 // import Button from './components/Button/Button'
 import Table from './components/Main_Body/Table'
+import Social from './components/Social/Social'
 
 
 
@@ -68,6 +69,7 @@ class App extends Component {
       <Route path="/rates" exact component={Table} />
       
       <Route path="/" exact component={Combined}/>
+      {/* <Social/> */}
       {/* <Route path="/" exact component={()=>(<div><WeddingCard/><PoolCard/></div>)}/> */}
 
 
